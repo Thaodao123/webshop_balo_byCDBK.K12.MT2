@@ -1,0 +1,84 @@
+.tm-parallax {
+	background-position: center; position: relative; background-attachment: fixed; background-size: cover;
+}
+.tm-parallax::before {
+	background: url("admin/images/pattern.png"); top: 0px; width: 100%; height: 100%; right: 0px; position: absolute; z-index: 0; content: ""; opacity: 0.8;
+}
+.widget-inner > [class*=col-] {
+	width: 100% !important; padding-right: 0px !important; padding-left: 0px !important;
+}
+.tm-col.default {
+	
+}
+.tm-col.primary {
+	
+}
+.tm-col.success {
+	
+}
+.tm-col.info {
+	
+}
+.tm-col.warning {
+	
+}
+.tm-col.danger {
+	
+}
+.tm-col.highlighted {
+	
+}
+.tm-row.default {
+	
+}
+.tm-row.primary {
+	
+}
+.tm-row.success {
+	
+}
+.tm-row.info {
+	
+}
+.tm-row.warning {
+	
+}
+.tm-row.danger {
+	
+}
+.tm-row.highlighted {
+	
+}
+.widget.default {
+	
+}
+.widget.primary {
+	
+}
+.widget.danger {
+	
+}
+.widget.info {
+	
+}
+.widget.warning {
+	
+}
+.widget.highlighted {
+	
+}
+.widget-separator .w_text_separator {
+	width: 100%; height: 2px; float: left; position: relative; background-color: rgb(121, 124, 133);
+}
+.widget-separator .w_text_separator .text_separ {
+	margin: 0px auto; padding: 0px 1px; top: -9px; width: 50px; text-align: center; font-family: monospace; font-size: 15px; position: absolute; background-color: rgb(255, 255, 255);
+}
+.widget-separator .separator_align_center {
+	left: 0px; right: 0px;
+}
+.widget-separator .separator_align_left {
+	left: 0px;
+}
+.widget-separator .separator_align_right {
+	right: 0px;
+}

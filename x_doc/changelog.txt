@@ -1,0 +1,41 @@
+2022.08.29 16h00
+- Đã bổ sung thêm giao diện Đăng Nhập Admin
+- có khoảng 12 bộ: đủ dùng
+
+2022.08.24 16h00
+- Đã sửa lại slideshow carousel nhãn hàng nổi bật trên home opencart_000.
+(xem table.manufacturer.php hàm ...Featureds())
+- đã sửa lỗi product price text format : hiện giá sản phẩm có dấu phảy
+
+2022.08.24 9h39
+- Sửa lại các Admin Theme cho đồng nhất về menu bên trái.
+(Menu Sidebar bên trái có 3 khối nghiệp vụ)
+
+@todo: Hiện tại chỉ có Home Opencart_000 là đúng và đẹp nhất.
+Cần sửa lại cho các giao diện trang chủ khác, nhất là số sản phẩm nổi bật !
+
+2022.08.22 15h16
+- Loại bỏ Google Map khỏi trang chủ home.php
+vì phần liên hệ (contact.php) đã có rồi.
+- Loại bỏ Menu Currency, thay thế nó bằng Menu Account
+ở bên trái của Menu Top. Bên phải sẽ chỉ có các menu hotline và menu giỏ hàng, thanh toán.
+- Bỏ đi label: Tên công ty, thay vào là: Tên Shop.
+- Footer: chỉ có Icon của các mạng xã hội nổi tiếng nhất:
+Facebook, Youtube, Twitter, Instagram
+
+- Tinh chỉnh lại Admin Layout: Left Side Menu: 
+làm gọn lại, sắp xếp theo 3 mảng nghiệp vụ
+cụ thể: C:....\php_webshop\ui\admin\flat_000\layout-admin.php
+
+- Gõ lại mã HTM bên trong view-category-form.php của phần admin
+để có thể sửa được số cột phân bố các menu con của 1 menu top loại cha trên HomePage.
+Ví dụ: menu Phụ Kiện có rất nhiều menu con, thì có thể phân nó ra làm nhiều cột !
+
+2021.04.25 23h11
+- Loại bỏ hàm productsRelated() trong table.product.php
+
+2021.04.24
+- Nâng cấp hàm banner_imageActives() trong file table.banner_image.php
+sử dụng kĩ thuật duyệt mảng theo kiểu tham chiếu (for loop iterate an array by reference)
+- Bổ sung đoạn mã xử lý giá sản phẩm trên banner ảnh: banner-image-form.php, view-banner-image-form.php
+- bổ sung hàm url_image_resized() trong file global.php

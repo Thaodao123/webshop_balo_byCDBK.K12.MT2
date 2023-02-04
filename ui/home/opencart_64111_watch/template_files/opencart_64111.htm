@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr" lang="en" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NovaWatch</title>
+	<base href="https://livedemo00.template-help.com/opencart_64111/" />
+		<meta name="description" content="NovaWatch" />
+				<!-- Fonts -->
+	<script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,700,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<!-- END Fonts -->
+	<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+
+	
+	<link href="catalog/view/theme/theme761/js/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+	<link href="catalog/view/theme/theme761/stylesheet/material-design.css" rel="stylesheet">
+	<link href="catalog/view/theme/theme761/js/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="catalog/view/theme/theme761/stylesheet/photoswipe.css" rel="stylesheet">
+	<link href="catalog/view/theme/theme761/stylesheet/stylesheet.css" rel="stylesheet">
+
+	
+	
+		<link href="catalog/view/theme/theme761/stylesheet/homebuilder.css" type="text/css" rel="stylesheet" media="screen" />
+		<link href="catalog/view/javascript/jquery/owl-carousel/owl.carousel.css" type="text/css" rel="stylesheet" media="screen" />
+		<link href="catalog/view/javascript/jquery/owl-carousel/owl.transitions.css" type="text/css" rel="stylesheet" media="screen" />
+			<link href="https://livedemo00.template-help.com/opencart_64111/image/catalog/favicon.png" rel="icon" />
+	
+	<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="catalog/view/theme/theme761/js/jquery.matchHeight-min.js" type="text/javascript"></script>
+		<script src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+		<script src="catalog/view/theme/theme761/js/tmparallax/jquery.rd-parallax.min.js" type="text/javascript"></script>
+		<script src="catalog/view/theme/theme761/js/tmmegamenu/superfish.min.js" type="text/javascript"></script>
+		<script src="catalog/view/theme/theme761/js/tmmegamenu/jquery.rd-navbar.min.js" type="text/javascript"></script>
+		</head>
+<body class="common-home">
+	<p id="gl_path" class="hidden">theme761</p>
+	<div id="page">
+		<div id="page-preloader" class="visible"><span class="preloader"></span></div>
+		<div class="ie-warning">
+			<a href="https://windows.microsoft.com/en-us/internet-explorer/download-ie">
+				<img src="catalog/view/theme/theme761/image/warning_bar_0000_us.jpg" border="0" height="75" width="1170" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+			</a>
+		</div>
+		<header>
+			<div class="container">
+				<div class="flex">
+					<h1 id="logo" class="logo">
+												<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=common/home"><img src="https://livedemo00.template-help.com/opencart_64111/image/catalog/images/logo.png" title="NovaWatch" alt="NovaWatch" class="img-responsive"></a>
+											</h1>									
+					<div class="mobile-search">
+						<!-- <a href="#" class="search__open"><i class="material-design-search100"></i></a> -->
+						
+<div id="search" class="search">
+	<div class="search__cnt">
+		<input class="search__input" type="text" name="search" value="" placeholder="Search"/>
+		<button class="search__btn" type="button"><i class="material-design-search100"></i></button>
+		<a href="#" class="search__close"><i class="material-design-close47"></i></a>
+	</div>
+</div>
+<script>
+	;(function ($) {
+		$(document).ready(function(){
+			var sBtn = $('.search__btn'),
+			sOpen    = $('.search__open'),
+			sClose   = $('.search__close'),
+			sInput   = $('.search__input'),
+			sCnt     = $('.search__cnt'),
+			search   = $('#search');
+
+			sBtn.on('click touchstart', function(){
+				if ( !sInput.val() == "" ) {
+					url = $('base').attr('href') + 'index.php?route=product/search';
+					var value = sInput.val();
+					if (value) {
+						url += '&search=' + encodeURIComponent(value);
+					}
+					location = url;
+				}
+			});
+			sOpen.on('click touchstart', function(e){
+				e.preventDefault();
+				search.addClass('open');
+				var strLength = sInput.val().length * 2;
+				sInput.focus();
+				sInput[0].setSelectionRange(strLength, strLength);
+			});
+			sClose.on('click touchstart', function(e){
+				e.preventDefault();
+				search.removeClass('open');
+				sInput.blur();
+			});
+			sInput.on('keydown', function(e){
+				if (e.keyCode == 13) {
+					sBtn.trigger('click');
+				}
+				if (e.keyCode == 27) {
+					sClose.trigger('click');
+				}
+			});
+			// $(document).on('click touchstart', function (e) {
+			// 	if (!o.is(e.target) && o.has(e.target).length === 0 && toggle__cont.hasClass('open')) {
+			// 		toggle__cont.removeClass('open');
+			// 		o.removeClass('open');
+			// 		input.blur();
+			// 		btn.removeClass('active');
+			// 	}
+			// });
+		});
+	})(jQuery);
+</script>					</div>					
+										<div class="navigation">						
+						<div class="megamenu">
+	<ul class="sf-menu">
+				<li class="sf-with-mega">
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=18">Women’s</a>
+									<ul class="sf-mega" >
+								<li class="sf-mega_row">
+										<div class="sf-mega_section" style="width: 15%">
+																								<div class="submenu_title">
+							<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=37">
+								Gifts							</a>
+						</div>
+																		<ul>
+							<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=49">UA Big Logo No-Show</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=44">Lily Fit String Back Vest</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=36">Finn Comfort Oze</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=31"> Cut Sleeve Muscle Tee</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=30">ASICS  Running Shoe</a>
+</li>
+						</ul>
+											</div>
+														<div class="sf-mega_section" style="width: 15%">
+																								<div class="submenu_title">
+							<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=42">
+								Gold							</a>
+						</div>
+																		<ul>
+							<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=50">Zoe Neon Stripe Sports Crop + Running Legging Set</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=45">Long Sleeve Triblend Pullover Hoodie</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=40">Flicker Men's Training Pants</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=32">Sneaker</a>
+</li>
+						</ul>
+											</div>
+														<div class="sf-mega_section" style="width: 15%">
+																								<div class="submenu_title">
+							<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=43">
+								Rubber							</a>
+						</div>
+																		<ul>
+							<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=50">Zoe Neon Stripe Sports Crop + Running Legging Set</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=45">Long Sleeve Triblend Pullover Hoodie</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=40">Flicker Men's Training Pants</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=32">Sneaker</a>
+</li>
+						</ul>
+											</div>
+														<div class="sf-mega_section" style="width: 15%">
+																								<div class="submenu_title">
+							<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=44">
+								Titanium							</a>
+						</div>
+																		<ul>
+							<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=50">Zoe Neon Stripe Sports Crop + Running Legging Set</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=45">Long Sleeve Triblend Pullover Hoodie</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=40">Flicker Men's Training Pants</a>
+</li>
+<li>
+<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=32">Sneaker</a>
+</li>
+						</ul>
+											</div>
+														<div class="sf-mega_section" style="width: 40%">
+																		<div class="megamenu_module">
+							<div id="banner5" class="banners">
+			<div class="Banner">
+		<div class="banner-box">
+			<a class="clearfix" href="index.php?route=product/category&amp;path=29">
+				<img src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/images/menu-banner-524x250.jpg" alt="Banner" class="img-responsive" />
+							</a>
+		</div>
+	</div>
+		</div>						</div>
+																							</div>
+												</ul>
+					</li>
+				<li >
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=20">Men’s</a>
+									
+					</li>
+				<li >
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=25">Kids</a>
+									
+					</li>
+				<li >
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=28">Fashion watches</a>
+									
+					</li>
+				<li >
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=29">Accessories</a>
+									
+					</li>
+				
+	</ul>
+</div>
+<script>
+	;(function ($) {
+		$(window).load(function () {
+			var o = $('.sf-menu');
+			o.superfish();
+			o.find('li a').each(function () {
+				if ($(location).attr('href').indexOf($(this).attr('href')) >= 0){
+					$(this).addClass('active');
+					return;
+				}
+			})
+			if (o.parents('aside').length){
+				var width = $('.container').outerWidth() - $('aside').outerWidth();
+				o.find('.sf-mega').each(function () {
+					$(this).width(width);
+				})
+			}
+		});
+	})(jQuery);
+</script>
+					</div>
+										<nav id="top-links" class="nav toggle-wrap">
+						<a class="toggle material-design-settings49" href='#'></a>
+						<ul class="toggle_cont">
+														<li class="sf-with-search hidden-xs">
+								<a href="#" class="search__open"><i class="material-design-search100"></i></a>
+								
+<div id="search" class="search">
+	<div class="search__cnt">
+		<input class="search__input" type="text" name="search" value="" placeholder="Search"/>
+		<button class="search__btn" type="button"><i class="material-design-search100"></i></button>
+		<a href="#" class="search__close"><i class="material-design-close47"></i></a>
+	</div>
+</div>
+<script>
+	;(function ($) {
+		$(document).ready(function(){
+			var sBtn = $('.search__btn'),
+			sOpen    = $('.search__open'),
+			sClose   = $('.search__close'),
+			sInput   = $('.search__input'),
+			sCnt     = $('.search__cnt'),
+			search   = $('#search');
+
+			sBtn.on('click touchstart', function(){
+				if ( !sInput.val() == "" ) {
+					url = $('base').attr('href') + 'index.php?route=product/search';
+					var value = sInput.val();
+					if (value) {
+						url += '&search=' + encodeURIComponent(value);
+					}
+					location = url;
+				}
+			});
+			sOpen.on('click touchstart', function(e){
+				e.preventDefault();
+				search.addClass('open');
+				var strLength = sInput.val().length * 2;
+				sInput.focus();
+				sInput[0].setSelectionRange(strLength, strLength);
+			});
+			sClose.on('click touchstart', function(e){
+				e.preventDefault();
+				search.removeClass('open');
+				sInput.blur();
+			});
+			sInput.on('keydown', function(e){
+				if (e.keyCode == 13) {
+					sBtn.trigger('click');
+				}
+				if (e.keyCode == 27) {
+					sClose.trigger('click');
+				}
+			});
+			// $(document).on('click touchstart', function (e) {
+			// 	if (!o.is(e.target) && o.has(e.target).length === 0 && toggle__cont.hasClass('open')) {
+			// 		toggle__cont.removeClass('open');
+			// 		o.removeClass('open');
+			// 		input.blur();
+			// 		btn.removeClass('active');
+			// 	}
+			// });
+		});
+	})(jQuery);
+</script>							</li>
+							 
+							<li class="toggle-wrap">
+								<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/account" title="My Account" class="toggle">
+									<i class="fa fa-user"></i>
+								</a>
+								<ul class="toggle_cont toggle_cont__right">
+																		<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/register">Register</a></li>
+									<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/login">Login</a></li>
+																	</ul>
+							</li>
+							<li class="toggle-wrap cog">
+								<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/account" title="My Account" class="toggle">
+									<i class="fa fa-cog"></i>
+									<!-- <span>My Account</span> -->
+									<!-- <span class="caret"></span> -->
+								</a>
+								<ul class="toggle_cont toggle_cont__right">								
+									<form action="https://livedemo00.template-help.com/opencart_64111/index.php?route=common/currency/currency" method="post" enctype="multipart/form-data" id="form-currency">
+				<li>
+		<button class="currency-select" type="button" name="EUR">
+			€			Euro		</button>
+	</li>
+						<li>
+		<button class="currency-select" type="button" name="GBP">
+			£			Pound Sterling		</button>
+	</li>
+						<li>
+		<button class="currency-select" type="button" name="RUB">
+			P			Ruble		</button>
+	</li>
+						<li>
+		<button class="currency-select selected" type="button" name="USD">
+			$			US Dollar		</button>
+	</li>
+				<input type="hidden" name="code" value="" />
+	<input type="hidden" name="redirect" value="https://livedemo00.template-help.com/opencart_64111/index.php?route=common/home" />
+</form>
+									<form action="https://livedemo00.template-help.com/opencart_64111/index.php?route=common/language/language" method="post" enctype="multipart/form-data" id="form-language">
+			<li>
+		<button class="language-select selected" type="button" name="en-gb">
+			<img width="16" height="11" src="catalog/language/en-gb/en-gb.png" alt="English" title="English" />
+			English		</button>
+	</li>
+				<li>
+		<button class="language-select" type="button" name="ru-ru">
+			<img width="16" height="11" src="catalog/language/ru-ru/ru-ru.png" alt="Russian" title="Russian" />
+			Russian		</button>
+	</li>
+			<input type="hidden" name="code" value="" />
+	<input type="hidden" name="redirect" value="https://livedemo00.template-help.com/opencart_64111/index.php?route=common/home" />
+</form>
+								</ul>
+							</li>
+
+							<li class="mobile-wishlist hidden-xs">
+								<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/wishlist" title="0">
+									<i class="fa fa-heart"></i>
+									<span id="wishlist-total">
+										0									</span>
+								</a>
+							</li>										
+							<li class="shopping-cart tablet-cart">
+								<div class="box-cart">
+	<div id="cart" class="cart toggle-wrap">
+		<button type="button" data-loading-text="Loading..." class="toggle">
+			<i class="fa fa-shopping-cart"></i> 			
+						<span id="cart-total2" class="cart-total2 hidden-xs">0</span>
+					</button>
+		<ul class="pull-right toggle_cont">
+						<li>
+				<p class="text-center">Your shopping cart is empty!</p>
+			</li>
+					</ul>
+	</div>
+</div>							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+		<div class="shopping-cart mobile-cart">
+			<div class="box-cart">
+	<div id="cart" class="cart toggle-wrap">
+		<button type="button" data-loading-text="Loading..." class="toggle">
+			<i class="fa fa-shopping-cart"></i> 			
+						<span id="cart-total2" class="cart-total2 hidden-xs">0</span>
+					</button>
+		<ul class="pull-right toggle_cont">
+						<li>
+				<p class="text-center">Your shopping cart is empty!</p>
+			</li>
+					</ul>
+	</div>
+</div>		</div>
+
+		<section class="top">
+<div  class="homebuilder clearfix ">
+			
+	 
+
+	
+	
+	
+			<div class="tm-container " >
+			<div class="tm-inner">
+				  
+				<div class="row row-level-1 ">
+					<div class="row-inner clearfix">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div class="col-inner ">
+								<div id="banner0" class="banners">
+			<div class="banner-1">
+		<div class="banner-box">
+			<a class="clearfix" href="index.php?route=product/category&amp;path=20">
+				<img src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/images/banner-01-1920x600.jpg" alt="banner-1" class="img-responsive" />
+								<div class="s-desc">																																																																																								</div>
+							</a>
+		</div>
+	</div>
+		</div>															</div>
+						</div>
+											</div>
+				</div>
+							</div>
+		</div>
+				
+	 
+
+	
+	
+	
+			<div class="tm-container container" >
+			<div class="tm-inner">
+				  
+				<div class="row row-level-1 ">
+					<div class="row-inner clearfix">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div class="col-inner ">
+								<div class="box manufacturer container">
+	<!-- <div class="box-heading"><h3>Brands</h3></div> -->
+	<div class="box-content">
+				<ul class="info list-unstyled aside_list manufacturers-carousel">
+						<li>
+				<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/manufacturer/info&amp;manufacturer_id=11">
+										<img src="https://livedemo00.template-help.com/opencart_64111/image/catalog/brands/brand-1.png" alt="Audemars Piguet">
+									</a>
+			</li>
+						<li>
+				<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/manufacturer/info&amp;manufacturer_id=13">
+										<img src="https://livedemo00.template-help.com/opencart_64111/image/catalog/brands/brand-3.png" alt="Baume&amp;Mercier">
+									</a>
+			</li>
+						<li>
+				<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/manufacturer/info&amp;manufacturer_id=12">
+										<img src="https://livedemo00.template-help.com/opencart_64111/image/catalog/brands/brand-2.png" alt="Blancpain">
+									</a>
+			</li>
+						<li>
+				<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/manufacturer/info&amp;manufacturer_id=15">
+										<img src="https://livedemo00.template-help.com/opencart_64111/image/catalog/brands/brand-5.png" alt="Ghopard">
+									</a>
+			</li>
+						<li>
+				<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/manufacturer/info&amp;manufacturer_id=17">
+										<img src="https://livedemo00.template-help.com/opencart_64111/image/catalog/brands/brand-6.png" alt="Maurice">
+									</a>
+			</li>
+						<li>
+				<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/manufacturer/info&amp;manufacturer_id=16">
+										<img src="https://livedemo00.template-help.com/opencart_64111/image/catalog/brands/brand-4.png" alt="Moto">
+									</a>
+			</li>
+					</ul>
+				<div class="clear"></div>
+	</div>
+</div>															</div>
+						</div>
+											</div>
+				</div>
+							</div>
+		</div>
+				
+	 
+
+	
+	
+	
+		<div class="banner-description">
+				<div class="tm-container " >
+			<div class="tm-inner">
+				  
+				<div class="row row-level-1 ">
+					<div class="row-inner clearfix">
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+							<div class="col-inner ">
+								<div id="banner1" class="banners">
+			<div class="banner-2">
+		<div class="banner-box">
+			<a class="clearfix" href="index.php?route=product/category&amp;path=18">
+				<img src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/images/banner-02-950x405.jpg" alt="banner-2" class="img-responsive" />
+								<div class="s-desc">																																																							</div>
+							</a>
+		</div>
+	</div>
+		</div>															</div>
+						</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+							<div class="col-inner ">
+								<div id="banner2" class="banners">
+			<div class="Banner">
+		<div class="banner-box">
+			<a class="clearfix" href="index.php?route=product/category&amp;path=28">
+				<img src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/images/banner-03-950x405.jpg" alt="Banner" class="img-responsive" />
+								<div class="s-desc">																																	</div>
+							</a>
+		</div>
+	</div>
+		</div>															</div>
+						</div>
+											</div>
+				</div>
+							</div>
+		</div>
+			</div>
+			
+	 
+
+	
+	
+	
+			<div class="tm-container container" >
+			<div class="tm-inner">
+				  
+				<div class="row row-level-1 ">
+					<div class="row-inner clearfix">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div class="col-inner ">
+								<div class="box latest">
+	<div class="box-heading">
+		<h3>Latest</h3>
+	</div>
+	<div class="box-content">
+		<div class="row">
+									<div class="product-layout col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+								<div class="product-thumb transition options" data-mh="my-group">
+										<!-- Product options -->
+					<div class="product-option-wrap">
+						<div class="product-options form-horizontal">
+							<div class="options">
+								<a class="ajax-overlay_close" href='#'></a>
+								<h3>Available Options</h3>
+								<div class="form-group hidden">
+									<div class="col-sm-8">
+										<input type="text" name="product_id" value="50" class="form-control"/>
+									</div>
+								</div>
+																								<div class="form-group required">
+									<label class="control-label col-sm-12" for="input-option5803001">
+										Size									</label>
+									<div class="col-sm-12">
+										<select name="option[58]" id="input-option5803001" class="form-control">
+											<option value="">--- Please Select ---</option>
+																						<option value="172">
+												Small												(+$1.00)											</option>
+																						<option value="175">
+												Medium												(+$2.00)											</option>
+																						<option value="174">
+												Large												(+$3.00)											</option>
+																					</select>
+									</div>
+								</div>
+																																																																																																<button class="product-btn-add" type="button" onclick="cart.addPopup($(this),'50');">
+								<i class="fa fa-shopping-cart hidden-lg"></i>
+									<span>Add to Cart</span>
+								</button>
+							</div>
+						</div>
+					</div>
+																				<div class="new-pr hidden-sm hidden-xs"><span>New</span></div>
+										<div class="image">
+						<a class="lazy" style="padding-bottom: 100%" href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=50">
+														<img width="270" height="270" alt="Zoe Neon Stripe Sports Crop + Running Legging Set" title="Zoe Neon Stripe Sports Crop + Running Legging Set" class="img-primary" data-src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/watches/product-77-270x270.png" src="#"/>
+							<img width="270" height="270" alt="Zoe Neon Stripe Sports Crop + Running Legging Set" title="Zoe Neon Stripe Sports Crop + Running Legging Set" class="img-secondary" data-src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/watches/product-78-270x270.png" src="#"/>
+													</a>						
+					</div>
+					<div class="caption">
+						<div class="name">
+							<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=50">Zoe Neon Stripe Sports Crop + Running Legging Set</a>
+						</div>
+						<div class="description">Are you looking for best-looking fitness clothing, most comfortable footwear, finest accessories and..</div>
+																		<div class="price">
+														$25.00																				</div>
+											</div>
+					<div class="cart-button">
+						<button class="product-btn-add" type="button"  onclick="ajaxAdd($(this),50);" >
+						<i class="fa fa-shopping-cart hidden-lg"></i>
+							<span class="hidden-sm hidden-xs hidden-md">Add to Cart</span>
+						</button>
+						<div>
+						<button class="product-btn" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('50');">
+							<i class="fa fa-heart"></i>
+						</button>
+						<button type="button" data-toggle="tooltip" data-product="50" title="Quick View" class="product-btn quickview hidden-sm hidden-xs">
+							<i class="fa fa-search"></i>													
+						</button>
+						<button class="product-btn" type="button" data-toggle="tooltip" title="Compare" onclick="compare.add('50');">
+							<i class="fa fa-exchange"></i>
+						</button>
+						</div>
+					</div>
+				</div>
+							</div>
+												<div class="product-layout col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+								<div class="product-thumb transition options" data-mh="my-group">
+										<!-- Product options -->
+					<div class="product-option-wrap">
+						<div class="product-options form-horizontal">
+							<div class="options">
+								<a class="ajax-overlay_close" href='#'></a>
+								<h3>Available Options</h3>
+								<div class="form-group hidden">
+									<div class="col-sm-8">
+										<input type="text" name="product_id" value="49" class="form-control"/>
+									</div>
+								</div>
+																								<div class="form-group required">
+									<label class="control-label col-sm-12" for="input-option5503002">
+										Size									</label>
+									<div class="col-sm-12">
+										<select name="option[55]" id="input-option5503002" class="form-control">
+											<option value="">--- Please Select ---</option>
+																						<option value="166">
+												Small												(+$1.00)											</option>
+																						<option value="164">
+												Medium												(+$2.00)											</option>
+																						<option value="163">
+												Large												(+$3.00)											</option>
+																					</select>
+									</div>
+								</div>
+																																																																																																<button class="product-btn-add" type="button" onclick="cart.addPopup($(this),'49');">
+								<i class="fa fa-shopping-cart hidden-lg"></i>
+									<span>Add to Cart</span>
+								</button>
+							</div>
+						</div>
+					</div>
+																				<div class="new-pr hidden-sm hidden-xs"><span>New</span></div>
+										<div class="image">
+						<a class="lazy" style="padding-bottom: 100%" href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=49">
+														<img width="270" height="270" alt="UA Big Logo No-Show" title="UA Big Logo No-Show" class="img-primary" data-src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/watches/product-73-270x270.png" src="#"/>
+							<img width="270" height="270" alt="UA Big Logo No-Show" title="UA Big Logo No-Show" class="img-secondary" data-src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/watches/product-76-270x270.png" src="#"/>
+													</a>						
+					</div>
+					<div class="caption">
+						<div class="name">
+							<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=49">UA Big Logo No-Show</a>
+						</div>
+						<div class="description">Are you looking for best-looking fitness clothing, most comfortable footwear, finest accessories and..</div>
+												<div class="rating">
+																					<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																				</div>
+																		<div class="price">
+														$20.00																				</div>
+											</div>
+					<div class="cart-button">
+						<button class="product-btn-add" type="button"  onclick="ajaxAdd($(this),49);" >
+						<i class="fa fa-shopping-cart hidden-lg"></i>
+							<span class="hidden-sm hidden-xs hidden-md">Add to Cart</span>
+						</button>
+						<div>
+						<button class="product-btn" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('49');">
+							<i class="fa fa-heart"></i>
+						</button>
+						<button type="button" data-toggle="tooltip" data-product="49" title="Quick View" class="product-btn quickview hidden-sm hidden-xs">
+							<i class="fa fa-search"></i>													
+						</button>
+						<button class="product-btn" type="button" data-toggle="tooltip" title="Compare" onclick="compare.add('49');">
+							<i class="fa fa-exchange"></i>
+						</button>
+						</div>
+					</div>
+				</div>
+							</div>
+												<div class="product-layout col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+								<div class="product-thumb transition options" data-mh="my-group">
+										<!-- Product options -->
+					<div class="product-option-wrap">
+						<div class="product-options form-horizontal">
+							<div class="options">
+								<a class="ajax-overlay_close" href='#'></a>
+								<h3>Available Options</h3>
+								<div class="form-group hidden">
+									<div class="col-sm-8">
+										<input type="text" name="product_id" value="48" class="form-control"/>
+									</div>
+								</div>
+																								<div class="form-group required">
+									<label class="control-label col-sm-12" for="input-option5203003">
+										Size									</label>
+									<div class="col-sm-12">
+										<select name="option[52]" id="input-option5203003" class="form-control">
+											<option value="">--- Please Select ---</option>
+																						<option value="157">
+												Small												(+$1.00)											</option>
+																						<option value="155">
+												Medium												(+$2.00)											</option>
+																						<option value="154">
+												Large												(+$3.00)											</option>
+																					</select>
+									</div>
+								</div>
+																																																																																																<button class="product-btn-add" type="button" onclick="cart.addPopup($(this),'48');">
+								<i class="fa fa-shopping-cart hidden-lg"></i>
+									<span>Add to Cart</span>
+								</button>
+							</div>
+						</div>
+					</div>
+																				<div class="new-pr hidden-sm hidden-xs"><span>New</span></div>
+										<div class="image">
+						<a class="lazy" style="padding-bottom: 100%" href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=48">
+														<img width="270" height="270" alt="Running Leggings" title="Running Leggings" class="img-primary" data-src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/watches/product-69-270x270.png" src="#"/>
+							<img width="270" height="270" alt="Running Leggings" title="Running Leggings" class="img-secondary" data-src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/watches/product-70-270x270.png" src="#"/>
+													</a>						
+					</div>
+					<div class="caption">
+						<div class="name">
+							<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=48">Running Leggings</a>
+						</div>
+						<div class="description">Are you looking for best-looking fitness clothing, most comfortable footwear, finest accessories and..</div>
+												<div class="rating">
+																					<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																				</div>
+																		<div class="price">
+														$13.00																				</div>
+											</div>
+					<div class="cart-button">
+						<button class="product-btn-add" type="button"  onclick="ajaxAdd($(this),48);" >
+						<i class="fa fa-shopping-cart hidden-lg"></i>
+							<span class="hidden-sm hidden-xs hidden-md">Add to Cart</span>
+						</button>
+						<div>
+						<button class="product-btn" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('48');">
+							<i class="fa fa-heart"></i>
+						</button>
+						<button type="button" data-toggle="tooltip" data-product="48" title="Quick View" class="product-btn quickview hidden-sm hidden-xs">
+							<i class="fa fa-search"></i>													
+						</button>
+						<button class="product-btn" type="button" data-toggle="tooltip" title="Compare" onclick="compare.add('48');">
+							<i class="fa fa-exchange"></i>
+						</button>
+						</div>
+					</div>
+				</div>
+							</div>
+												<div class="product-layout col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+								<div class="product-thumb transition options" data-mh="my-group">
+										<!-- Product options -->
+					<div class="product-option-wrap">
+						<div class="product-options form-horizontal">
+							<div class="options">
+								<a class="ajax-overlay_close" href='#'></a>
+								<h3>Available Options</h3>
+								<div class="form-group hidden">
+									<div class="col-sm-8">
+										<input type="text" name="product_id" value="47" class="form-control"/>
+									</div>
+								</div>
+																								<div class="form-group required">
+									<label class="control-label col-sm-12" for="input-option4903004">
+										Size									</label>
+									<div class="col-sm-12">
+										<select name="option[49]" id="input-option4903004" class="form-control">
+											<option value="">--- Please Select ---</option>
+																						<option value="146">
+												Small												(+$1.00)											</option>
+																						<option value="148">
+												Medium												(+$1.50)											</option>
+																						<option value="145">
+												Large												(+$2.00)											</option>
+																					</select>
+									</div>
+								</div>
+																																																																																																<button class="product-btn-add" type="button" onclick="cart.addPopup($(this),'47');">
+								<i class="fa fa-shopping-cart hidden-lg"></i>
+									<span>Add to Cart</span>
+								</button>
+							</div>
+						</div>
+					</div>
+																				<div class="new-pr hidden-sm hidden-xs"><span>New</span></div>
+										<div class="image">
+						<a class="lazy" style="padding-bottom: 100%" href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=47">
+														<img width="270" height="270" alt="Wrap Front Bodysuit" title="Wrap Front Bodysuit" class="img-primary" data-src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/watches/product-65-270x270.png" src="#"/>
+							<img width="270" height="270" alt="Wrap Front Bodysuit" title="Wrap Front Bodysuit" class="img-secondary" data-src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/watches/product-68-270x270.png" src="#"/>
+													</a>						
+					</div>
+					<div class="caption">
+						<div class="name">
+							<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/product&amp;product_id=47">Wrap Front Bodysuit</a>
+						</div>
+						<div class="description">Are you looking for best-looking fitness clothing, most comfortable footwear, finest accessories and..</div>
+												<div class="rating">
+																					<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																												<span class="fa-stack">
+								<i class="material-design-bookmark45 fa-stack-1x"></i>
+								<i class="material-design-bookmark45 star fa-stack-1x"></i>
+							</span>
+																				</div>
+																		<div class="price">
+														$12.00																				</div>
+											</div>
+					<div class="cart-button">
+						<button class="product-btn-add" type="button"  onclick="ajaxAdd($(this),47);" >
+						<i class="fa fa-shopping-cart hidden-lg"></i>
+							<span class="hidden-sm hidden-xs hidden-md">Add to Cart</span>
+						</button>
+						<div>
+						<button class="product-btn" type="button" data-toggle="tooltip" title="Add to Wish List" onclick="wishlist.add('47');">
+							<i class="fa fa-heart"></i>
+						</button>
+						<button type="button" data-toggle="tooltip" data-product="47" title="Quick View" class="product-btn quickview hidden-sm hidden-xs">
+							<i class="fa fa-search"></i>													
+						</button>
+						<button class="product-btn" type="button" data-toggle="tooltip" title="Compare" onclick="compare.add('47');">
+							<i class="fa fa-exchange"></i>
+						</button>
+						</div>
+					</div>
+				</div>
+							</div>
+								</div>
+	</div>
+</div>
+															</div>
+						</div>
+											</div>
+				</div>
+							</div>
+		</div>
+				
+	 
+
+	
+	
+	
+			<div class="tm-container " >
+			<div class="tm-inner">
+				  
+				<div class="row row-level-1 ">
+					<div class="row-inner clearfix">
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+							<div class="col-inner ">
+								<div id="banner3" class="banners">
+			<div class="Banner">
+		<div class="banner-box">
+			<a class="clearfix" href="index.php?route=product/category&amp;path=18">
+				<img src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/images/banner-04-950x405.jpg" alt="Banner" class="img-responsive" />
+								<div class="s-desc">											</div>
+							</a>
+		</div>
+	</div>
+		</div>															</div>
+						</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+							<div class="col-inner ">
+								<div id="banner4" class="banners">
+			<div class="Banner">
+		<div class="banner-box">
+			<a class="clearfix" href="index.php?route=product/category&amp;path=29">
+				<img src="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/images/banner-05-950x405.jpg" alt="Banner" class="img-responsive" />
+							</a>
+		</div>
+	</div>
+		</div>															</div>
+						</div>
+											</div>
+				</div>
+							</div>
+		</div>
+				
+	 
+
+	
+	
+	
+			<div class="tm-container container" >
+			<div class="tm-inner">
+				  
+				<div class="row row-level-1 ">
+					<div class="row-inner clearfix">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div class="col-inner relative">
+																							</div>
+						</div>
+											</div>
+				</div>
+							</div>
+		</div>
+				
+	 
+
+	
+	
+	
+			<div class="tm-container " >
+			<div class="tm-inner">
+				  
+				<div class="row row-level-1 ">
+					<div class="row-inner clearfix">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div class="col-inner ">
+								<!-- RD Parallax -->
+<div id="parallax_0" class="rd-parallax">
+	<div class="rd-parallax-layer" data-type="media" data-speed="0.1" data-direction="inverse" data-url="https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/images/parallax-1920x862.jpg" data-blur="true">
+	</div>
+		<div class="rd-parallax-layer layer-0" data-type="html" data-speed="0.1" data-fade="false" data-direction="inverse" >
+	
+		<div class="container">
+			<div class="parallax">
+	<h2>the return of a</h2>
+	<p>great classic</p>
+	<a href="index.php?route=product/product&path=28&product_id=34" class="btn btn-primary">discover more</a>
+</div>
+			
+						
+		</div>
+	</div>
+	</div>
+<script>
+	jQuery(document).ready(function () {
+		jQuery("#parallax_0").RDParallax();
+	});
+</script>
+<!-- END RD Parallax-->
+															</div>
+						</div>
+											</div>
+				</div>
+							</div>
+		</div>
+				
+	 
+
+	
+	
+	
+			<div class="tm-container container" >
+			<div class="tm-inner">
+				  
+				<div class="row row-level-1 ">
+					<div class="row-inner clearfix">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div class="col-inner ">
+								<div id="tm-newsletter" class="box newsletter">
+	<!-- <div class="box-heading"><h3>Newsletter</h3></div> -->
+	<div class="box-content">
+	<div class="col-lg-5 col-xs-12">
+			<p class="newsletter-description">Subscribe to the NovaWatch mailing list to receive updates on new arrivals, special offers and other discount information.</p>		</div>
+		<div class="col-lg-7 col-xs-12">
+			<form method="post" enctype="multipart/form-data" id="tm-newsletter-form">
+				<div class="tm-login-form">
+					<label class="control-label" for="input-tm-newsletter-email"></label>
+					<input type="text" name="tm_newsletter_email" value="" placeholder="Email"
+					id="input-tm-newsletter-email" class="form-control"/>
+				</div>
+				<span id="tm-newsletter_error" class="newsletter-error"></span>
+				<span id="tm-newsletter_success" class="newsletter-success"></span>
+				<div class="right"><button type="submit" id="tm-newsletter-button" class="dropdown-btn">subscribe</button></div>
+			</form>
+			
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function () {
+		$('#tm-newsletter').submit(function (e) {
+			e.preventDefault();
+			var email = $("#input-tm-newsletter-email").val();
+			var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/igm;
+			if (emailRegex.test(email)) {
+				var dataString = 'tm_newsletter_email=' + email;
+				$.ajax({
+					type: "POST",
+					url: "index.php?route=extension/module/tm_newsletter/addNewsletter",
+					data: dataString,
+					cache: false,
+					success: function (result) {
+						if (!result){
+							$('#tm-newsletter_error').html('');
+							$('#tm-newsletter_success').stop(true, true).html('You have successfully subscribed').fadeIn(300).delay(4000).fadeOut(300);
+						}else{
+							$('#tm-newsletter_success').html('');
+							$('#tm-newsletter_error').stop(true, true).html(result).fadeIn(300).delay(4000).fadeOut(300);
+						}
+					}
+				});
+			} else {
+				$('#tm-newsletter_success').html('');
+				$('#tm-newsletter_error').stop(true, true).html('Please enter a valid e-mail!').fadeIn(300).delay(4000).fadeOut(300);
+			}
+		});
+	});
+</script>															</div>
+						</div>
+											</div>
+				</div>
+							</div>
+		</div>
+				
+	 
+
+	
+	
+	
+			<div class="tm-container container" >
+			<div class="tm-inner">
+				  
+				<div class="row row-level-1 ">
+					<div class="row-inner clearfix">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div class="col-inner ">
+								<div id="tm-newsletter-popup" class="newsletter-popup-wrap">
+	<div class="newsletter-popup"  style="background-image: url(https://livedemo00.template-help.com/opencart_64111/image/cache/catalog/images/bg-newsletter-618x511.png)">
+		<div class="box-content popup-padding" >
+			<!-- 			<div class="logo">
+				<img src="https://livedemo00.template-help.com/opencart_64111/image/catalog/images/logo.png" title="NovaWatch"alt="NovaWatch" class="img-responsive"/>
+			</div>
+			 -->
+			<h2></h2>
+			<p>Subscribe to the NovaWatch mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+			<form method="post" enctype="multipart/form-data" id="tm-newsletter-popup-form">
+				<div class="tm-login-form">
+					<label class="control-label" for="input-tm-newsletter-popup-email"></label>
+					<input type="text" name="tm_newsletter_popup_email" value="" placeholder="Enter your e-mail"
+					id="input-tm-newsletter-popup-email" class="form-control"/>
+					<button type="submit" id="tm-newsletter-popup-button" class="newsletter-popup-btn">						
+						Subscribe					</button>
+					<span id="tm-newsletter-popup_error" class="newsletter-error"></span>
+					<span id="tm-newsletter-popup_success" class="newsletter-success"></span>
+				</div>
+			</form>
+		</div>
+		<a href="#" id="newsletter-popup-close-btn" class="newsletter-popup-close-btn fa fa-times"></a>
+		<a href='#' id="newsletter-popup-dont-show" class="newsletter-popup-dont-show">
+			Don't show this message again		</a>
+	</div>
+</div>
+
+<script>
+	function getCookie(c_name) {
+		var search = c_name + "="
+		var returnvalue = "";
+		if (document.cookie.length > 0) {
+			offset = document.cookie.indexOf(search)
+			if (offset != -1) {
+				offset += search.length
+				end = document.cookie.indexOf(";", offset);
+				if (end == -1) end = document.cookie.length;
+				returnvalue=unescape(document.cookie.substring(offset, end))
+			}
+		}
+		return returnvalue;
+	}
+	jQuery(document).ready(function ($) {
+		var showIt = getCookie('shownewsletter');
+		var m = 1;
+		var date = new Date();
+		date.setTime(date.getTime() + (m * 60 * 1000));
+		if (showIt == '') {
+			$('#tm-newsletter-popup').fadeIn(300);
+		}
+		$('#newsletter-popup-dont-show').click(function (e) {
+			e.preventDefault()
+			document.cookie = 'shownewsletter=true; path=/; expires=' + date.toString();
+			$('#tm-newsletter-popup').fadeOut(300);
+		});
+		$('#newsletter-popup-close-btn').click(function (e) {
+			e.preventDefault();
+			document.cookie = 'shownewsletter=false';
+			$('#tm-newsletter-popup').fadeOut(300);
+		});
+		$('#tm-newsletter-popup').submit(function (e) {
+			e.preventDefault();
+			var email = $("#input-tm-newsletter-popup-email").val();
+			var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/igm;
+			if (emailRegex.test(email)) {
+				var dataString = 'tm_newsletter_popup_email=' + email;
+				$.ajax({
+					type: "POST",
+					url: "index.php?route=extension/module/tm_newsletter_popup/addNewsletter",
+					data: dataString,
+					cache: false,
+					success: function (result) {
+						if (!result) {
+							$('#tm-newsletter-popup_error').html('');
+							$('#tm-newsletter-popup_success').stop(true, true).html('You have successfully subscribed').fadeIn(300).delay(4000).fadeOut(300);
+						} else {
+							$('#tm-newsletter-popup_success').html('');
+							$('#tm-newsletter-popup_error').stop(true, true).html(result).fadeIn(300).delay(4000).fadeOut(300);
+						}
+					}
+				});
+			} else {
+				$('#tm-newsletter-popup_success').html('');
+				$('#tm-newsletter-popup_error').stop(true, true).html('Please enter a valid e-mail!').fadeIn(300).delay(4000).fadeOut(300);
+			}
+		});
+});
+</script>
+															</div>
+						</div>
+											</div>
+				</div>
+							</div>
+		</div>
+				 
+	</div>
+</section>
+<div class="container">
+	<div class="row">								<div id="content" class="col-sm-12"></div>
+			</div>
+</div>
+<footer>
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-xs-6 col-sm-3 col-md-3">
+				<h5>Categories</h5>
+				<ul class="list-unstyled">
+										<li>
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=18">Women’s</a>
+					</li>
+										<li>
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=20">Men’s</a>
+					</li>
+										<li>
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=25">Kids</a>
+					</li>
+										<li>
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=28">Fashion watches</a>
+					</li>
+										<li>
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=29">Accessories</a>
+					</li>
+										<li>
+						<a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/category&amp;path=30">Styles</a>
+					</li>
+									</ul>
+			</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+				<h5>Information</h5>
+				<ul class="list-unstyled">
+										<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=simple_blog/article">Blog</a></li>
+															<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=information/information&amp;information_id=4">About</a></li>
+										<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=information/information&amp;information_id=6">Delivery Information</a></li>
+										<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+										<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+										
+				</ul>
+			</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+				<h5>Extras</h5>
+				<ul class="list-unstyled">
+					<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/manufacturer">Brands</a></li>
+					<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/voucher">Gift Certificates</a></li>
+					<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=affiliate/account">Affiliates</a></li>
+					<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=product/special">Specials</a></li>
+					
+				</ul>
+			</div> 
+			<div class="col-xs-6 col-sm-3 col-md-3">
+				<h5>My Account</h5>
+				<ul class="list-unstyled">
+					<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/account">My Account</a></li>
+					<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/order">Order History</a></li>
+					<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/wishlist">Wish List</a></li>
+					<li><a href="https://livedemo00.template-help.com/opencart_64111/index.php?route=account/newsletter">Newsletter</a></li>
+				</ul>
+			</div>			
+		</div>		
+	</div>
+</footer>
+<div class="copyright">
+	<div class="container">
+		<div class="text-copyright">Powered By <a href="https://www.opencart.com">OpenCart</a><br /> NovaWatch &copy; 2022<!-- [[%FOOTER_LINK]] --></div>
+		
+		<div class="list">			
+							<ul class="social-list list-unstyled">
+				<li><a class="fa fa-facebook" href="https://www.facebook.com/TemplateMonster/"  title="Facebook"></a></li>
+				<li><a class="fa fa-twitter" href="https://twitter.com/TemplateMonster"  title="Twitter"></a></li>
+				<li><a class="fa fa-instagram" href="https://www.instagram.com/template_monster/"  title="Instagram"></a></li>
+			</ul>
+			
+		</div> 
+	</div>
+
+</div>
+<div class="ajax-overlay"></div>
+<div class="ajax-quickview-overlay">
+	<span class="ajax-quickview-overlay__preloader"></span>
+</div>
+</div>
+<script src="catalog/view/theme/theme761/js/device.min.js" type="text/javascript"></script>
+<script src="catalog/view/theme/theme761/js/livesearch.min.js" type="text/javascript"></script>
+<script src="catalog/view/theme/theme761/js/common.js" type="text/javascript"></script>
+<script src="catalog/view/theme/theme761/js/script.js" type="text/javascript"></script>
+<!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager --></body></html>
